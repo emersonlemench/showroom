@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  animation: changeBackground 4s linear infinite;
+}
+  @keyframes changeBackground {
+    0% {
+      background: linear-gradient(-45deg, #570f57, #1d6464, #256825, #9c9c15);
+      background-size: 400% 400%;
+      background-position: 0 50%;
+    }
+    100% {
+      background: linear-gradient(-45deg, #000000, #886210, #785ba1, #322e37);
+      background-size: 400% 400%;
+      background-position: 100% 50%;
+    }
+  }
+
+
+.logo {
+  width: 200px;
+  height: 200px;
+  background-image: url('glowlogo.png'); /* replace with your logo URL or data URI */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.welcome-message {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
