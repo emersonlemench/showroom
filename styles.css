@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #00ffaa, #ff00bb, #342aff);
+  animation: changeBackground 2s linear infinite;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  animation: changeBackground 12s linear infinite;
+}
+  @keyframes changeBackground {
+    0% {
+      background: linear-gradient(to right, #b42906, #099928, #3c01bb);
+      background-size: 400% 400%;
+      background-position: 0 50%;
+    }
+    100% {
+      background: linear-gradient(to right, #0392b6, #ba05a8, #c6d404);
+      background-size: 400% 400%;
+      background-position: 100% 50%;
+    }
+  }
+
+.contenedor {
+  width: 250px;
+  position: relative;
+}
+
+
+.logo {
+  position: relative;
+}
+
+.elipse {
+  width: 200%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateAnimation 25s linear infinite;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+margin-top: 20px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid white;
+  /* background-color: #3f51b5; */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.boton:hover {
+  background-color: #303f9f;
+}
+
+.redes img{
+  margin: 20px;
+ width: 50px;
+}
+@media (max-width: 600px) {
+  .botones {
+      grid-template-columns: repeat(auto-fit, minmax(250px, fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .botones {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+
+
+@keyframes rotateAnimation {
+  from {
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redes {
+  font-size: 24px;
+}
+
+.redes a {
+  color: #fff; 
+  margin: 0 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .redes {
+    font-size: 20px;
+  }
+}
+
+
+/* MOBILE  */
+
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    width: 150px;
+    position: relative;
+  }
+}
