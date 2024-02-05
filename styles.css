@@ -41,6 +41,18 @@ body {
   position: relative;
 }
 
+.tipos {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.tipos img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+}
 
 .logo {
   position: relative;
