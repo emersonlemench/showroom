@@ -1,0 +1,60 @@
+body {
+  margin: 0; /* Eliminar márgenes por defecto */
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Cambiar la fuente si es necesario */
+  background: linear-gradient(180deg, #232c58, #3b3939, #1b1e2e, #3c444a); /* Degradado con múltiples colores */
+  background-size: 200% 200%; /* Ampliar el fondo para permitir movimiento */
+  animation: backgroundAnimation 20s ease-in-out infinite; /* Animación con transiciones suaves */
+  color: #ffffff; /* Color del texto */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%; /* Posición inicial del fondo */
+  }
+  50% {
+    background-position: 100% 100%; /* Mover el fondo a una nueva posición */
+  }
+  100% {
+    background-position: 0% 0%; /* Regresar a la posición inicial */
+  }
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+
+#Capa_1{
+  width: 150px;
+
+}
+
+h1, h2 {
+  color: #ffffff; /* Color más oscuro para los encabezados */
+  text-align: center;
+  margin: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px; /* Ancho máximo de cada sección */
+  background-color: #0000004f;
+}
+
+.galeria {
+  padding: 10px;
+}
+
+
+img {
+  max-width: 100%; /* Asegura que las imágenes sean responsivas */
+  height: auto; /* Mantiene las proporciones */
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05); /* Efecto zoom al pasar el mouse */
+}
